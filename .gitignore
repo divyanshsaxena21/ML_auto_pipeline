@@ -1,0 +1,105 @@
+# ---- Python bytecode / cache ----
+__pycache__/
+*.py[cod]
+*$py.class
+
+# ---- Virtual environments ----
+.env/
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Packages / build artifacts ----
+build/
+dist/
+*.egg-info/
+.eggs/
+ pip-wheel-metadata/
+*.manifest
+*.spec
+
+# ---- Tooling caches ----
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+.mypy_cache/
+.pyre/
+.dmypy.json
+
+# ---- Coverage / reports ----
+.coverage*
+htmlcov/
+coverage.xml
+
+# ---- Logs & debug ----
+logs/
+*.log
+*.out
+*.err
+
+# ---- Data / artifacts (adjust if you want some tracked) ----
+data/
+datasets/
+outputs/
+models/
+checkpoints/
+artifacts/
+mlruns/
+wandb/
+# TensorBoard logs
+runs/
+tb_logs/
+
+# ---- Jupyter / notebooks ----
+.ipynb_checkpoints/
+*.ipynb/*.checkpoint
+
+# ---- OS / Editor ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code / JetBrains
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ---- Security / secrets ----
+*.pem
+*.key
+*.crt
+*.pfx
+# Local env files (keep a template like .env.example committed)
+.env
+.env.*
+!.env.example
+
+# ---- Temporary / scratch ----
+tmp/
+temp/
+*.tmp
+*.bak
+*.old
+
+# ---- Compiled extensions ----
+*.so
+*.dylib
+*.dll
+*.pyd
+
+# ---- Lock / state ----
+.poetry-cache/
+.poetry/
+
+# ---- Misc ----
+.ipynb_checkpoints/
+*.sqlite3
+
+# If you later add docs builds (Sphinx, MkDocs), consider adding their build dirs:
+# docs/_build/
+# site/
+
+# End of file
