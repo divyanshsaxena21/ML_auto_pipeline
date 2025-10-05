@@ -7,7 +7,7 @@ __all__ = [
     "__version__"
 ]
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 
 # Re-export from implementation package (currently duplicated module set)
 from ml_pipeline.eda import load_data, basic_report  # noqa: E402
