@@ -99,6 +99,7 @@ temp/
 *.sqlite3
 
 .testenv/
+.env.example
 # If you later add docs builds (Sphinx, MkDocs), consider adding their build dirs:
 # docs/_build/
 # site/
