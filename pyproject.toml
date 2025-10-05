@@ -34,6 +34,16 @@ dev = [
   "pytest",
   "coverage",
 ]
+progress = [
+  "tqdm>=4.60"
+]
+config = [
+  "PyYAML>=6.0"
+]
+all = [
+  "tqdm>=4.60",
+  "PyYAML>=6.0"
+]
 
 [project.scripts]
 ml-autopipeline = "ml_autopipeline.cli:main"
