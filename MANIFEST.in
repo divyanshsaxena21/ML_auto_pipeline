@@ -1,0 +1,5 @@
+include README.md
+include LICENSE
+recursive-include ml_autopipeline *.py
+recursive-include ml_pipeline *.py
+exclude tests

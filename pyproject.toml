@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ml-autopipeline"
+version = "0.1.0"
+description = "Automated ML pipeline with EDA, imbalance detection (SMOTE) and basic model training"
+readme = "README.md"
+authors = [ { name = "Divyansh Saxena" } ]
+license = { text = "MIT" }
+requires-python = ">=3.8"
+keywords = ["machine-learning", "eda", "sampling", "smote", "training", "automation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+# core runtime dependencies
+dependencies = [
+  "pandas>=1.0",
+  "scikit-learn>=0.24",
+  "imbalanced-learn>=0.8"
+]
+
+[project.optional-dependencies]
+# Example: pip install ml-autopipeline[dev]
+dev = [
+  "pytest",
+  "coverage",
+]
+
+[project.scripts]
+ml-autopipeline = "ml_autopipeline.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/ml-autopipeline"
+Repository = "https://github.com/yourusername/ml-autopipeline"
+Issues = "https://github.com/yourusername/ml-autopipeline/issues"
+
+[tool.setuptools]
+# Both packages so users can import either style while transitioning
+packages = ["ml_autopipeline", "ml_pipeline"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+python_files = ["test_*.py"]
+
