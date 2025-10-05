@@ -98,6 +98,7 @@ temp/
 .ipynb_checkpoints/
 *.sqlite3
 
+.testenv/
 # If you later add docs builds (Sphinx, MkDocs), consider adding their build dirs:
 # docs/_build/
 # site/
